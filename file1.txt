@@ -1,0 +1,7 @@
+this is file1.
+
+[BillSystem]
+UserName = sa
+Password = 1
+DBName = eVideoBill
+Server = 192.168.1.2
