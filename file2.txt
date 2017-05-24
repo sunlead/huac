@@ -1,8 +1,0 @@
-# this is the text example
-
-# my name is chenhua
-
-
-------------------------
-
-this is new line.
