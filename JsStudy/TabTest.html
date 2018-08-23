@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TabTest</title>
+
+    <style>
+        input
+        {
+            color: navajowhite;
+        }
+        .active
+        {
+            color: red;
+        }
+        div
+        {
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var obtn = document.getElementsByTagName('input');
+            var odiv = document.getElementsByTagName('div');
+
+//            alert(obtn.length);
+
+            for (var i=0; i<obtn.length; i++)
+            {
+                obtn[i].index = i;
+                obtn[i].onclick = function ()
+                {
+                  for(var j=0; j<obtn.length; j++) {
+                      obtn[j].className = '';
+                      odiv[j].style.display = 'none';
+                  }
+//                    alert(this.index);
+                  obtn[this.index].className = 'active';
+                  odiv[this.index].style.display = 'block';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="1" class="active">
+    <input type="button" value="2">
+    <input type="button" value="3">
+
+    <div style="display:block; background: burlywood;" >
+        111
+    </div>
+
+    <div style="background: chartreuse;">
+        222
+    </div>
+
+    <div style="background: darkred;">
+        333
+    </div>
+
+</body>
+</html>

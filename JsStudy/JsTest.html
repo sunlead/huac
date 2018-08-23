@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的JavaScritp</title>
+
+    <style type="text/css">
+        #div1
+        {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function changeYello()
+        {
+            oDiv = document.getElementById("div1");
+            oDiv.style.height = '300px';
+            oDiv.style.width = '300px';
+            oDiv.style.background = 'yellow';
+            oDiv.style.display = 'block';
+
+        }
+
+        function changeRed()
+        {
+            oDiv = document.getElementById("div1");
+            oDiv.style.height = '200px';
+            oDiv.style.width = '200px';
+            oDiv.style.background = 'red';
+            oDiv.style.display = 'none';
+
+        }
+    </script>
+</head>
+
+    <label onmouseenter="changeYello()" onmouseout="changeRed()" >
+        这是一个标签
+    </label>
+
+    <div id="div1" ">
+        这是一个区域
+    </div>
+
+    <hr>
+
+    <div class="box" >
+        这是另一个区域
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>全选测试</title>
+
+    <script type="text/javascript">
+        function CheckAll()
+        {
+            olist = document.getElementsByTagName("input");
+            for (var i=0;i<olist.length;i++)
+            {
+                if (olist[i].checked == false){
+                    olist[i].checked = true;
+                }else{
+                    olist[i].checked = false;
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <label onclick="CheckAll()">全选</label><br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+    <input type="checkbox"></br>
+</body>
+</html>
